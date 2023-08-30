@@ -1,0 +1,737 @@
+body {
+    /*background-color: #0A2647; */
+    background: hsla(212, 75%, 16%, 1); 
+   
+background: linear-gradient(90deg, hsla(212, 75%, 16%, 1) 0%, hsla(212, 75%, 32%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(212, 75%, 16%, 1) 0%, hsla(212, 75%, 32%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(212, 75%, 16%, 1) 0%, hsla(212, 75%, 32%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0A2647", endColorstr="#154E90", GradientType=1 );
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    /*background-color: #3c6ca3; */
+    /*background-color: #0A2647; */
+    background-color: rgba(240, 248, 255, 0.11);
+
+
+    width: 100%;
+    left: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header .logo{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    position: relative;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    color: white;
+    padding:10px 60px;
+    cursor: pointer;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px 60px;
+    color: white;
+    position: relative;
+    left: -50px;
+    
+}
+
+header .action .searchBx {
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    width: 20em;
+    transition: 0.4s;
+
+}
+@media(max-width: 600px) {
+    header .action .searchBx input {
+    width: 10em;
+    }
+} 
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: hsla(0, 100%, 16%, 1);
+
+background: linear-gradient(315deg, hsla(0, 100%, 16%, 1) 0%, hsla(0, 100%, 45%, 1) 100%);
+
+background: -moz-linear-gradient(315deg, hsla(0, 100%, 16%, 1) 0%, hsla(0, 100%, 45%, 1) 100%);
+
+background: -webkit-linear-gradient(315deg, hsla(0, 100%, 16%, 1) 0%, hsla(0, 100%, 45%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#530000", endColorstr="#E60000", GradientType=1 );
+
+
+}
+
+.banner .bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 768px) {
+    .banner .bg{
+        font-size: 1em;
+        left: 40px;
+    }
+} 
+
+.banner .bg img {
+    width: 35em;
+    height: auto;
+    position: relative;
+    
+}
+
+@media(max-width: 768px) {
+    .banner .bg img{
+        width: 15em;
+        top:   200px;
+        left: -40px;
+    }
+} 
+
+.banner .bg .content .btn {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: aqua;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.banner .bg .content .btn:hover {
+    background-color: crimson;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: hsla(118, 42%, 40%, 1);
+
+background: linear-gradient(225deg, hsla(118, 42%, 40%, 1) 0%, hsla(130, 100%, 64%, 1) 92%);
+
+background: -moz-linear-gradient(225deg, hsla(118, 42%, 40%, 1) 0%, hsla(130, 100%, 64%, 1) 92%);
+
+background: -webkit-linear-gradient(225deg, hsla(118, 42%, 40%, 1) 0%, hsla(130, 100%, 64%, 1) 92%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3E913B", endColorstr="#48FF66", GradientType=1 );
+}
+
+.about .contentBx{
+    color: white;
+    width: 50%;
+    margin: 20px;
+    position: relative;
+    left: 700px;
+
+}
+
+.about .contentBx h2 {
+    font-size: 3em;
+    font-weight: 600;
+    
+}
+
+@media (max-width: 768px) {
+    .about .contentBx h2 {
+        font-size: 1.5em;
+        position: relative;
+        left: -460px;
+
+    }
+}
+
+.about img {
+    width: 30em;
+    height: auto;
+    position: absolute;
+    
+}
+
+@media (max-width: 768px) {
+    .about img {
+       width: 15em;
+       bottom: 100px;
+       left: -30px;
+
+    }
+}
+
+.about .contentBx a {
+    color: white;
+    text-decoration: none;
+    background-color: cyan;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .about .contentBx a {
+        
+        position: relative;
+        left: -460px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .about .contentBx p {
+        font-size: 0.7em;
+        position: relative;
+        left: -460px;
+
+    }
+}
+
+.about .contentBx a:hover {
+    background-color: crimson;
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-color: rgb(0, 0, 0); */
+    
+   background: hsla(0, 0%, 0%, 1);
+
+background: linear-gradient(315deg, hsla(0, 0%, 0%, 1) 0%, hsla(237, 93%, 23%, 1) 100%);
+
+background: -moz-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 0%, hsla(237, 93%, 23%, 1) 100%);
+
+background: -webkit-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 0%, hsla(237, 93%, 23%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#040A73", GradientType=1 );
+
+}
+
+.login .contentLogin {
+   /* background-color: rgb(230,45,41); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    position: relative;
+    min-height: 50vh;
+    left: 100px;
+}
+.login .contentLogin h3{
+    font-size: 3em;
+    color:rgb(230,45,41) ;
+    margin: 0;
+    
+}
+
+@media (max-width: 768px) {
+    .login .contentLogin h3{
+        font-size: 1em;
+        position: relative;
+        left: 150px;
+    }
+}
+.login .contentLogin p {
+    font-size: 2em;
+    padding: 0px ;
+    
+}
+
+@media (max-width: 768px) {
+    .login .contentLogin p{
+        font-size: 1em;
+        position: relative;
+        left: 150px;
+    }
+}
+
+.login .contentLogin input {
+    width: 20em;
+    height: 3em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .login .contentLogin input{
+        
+        position: relative;
+        left: 150px;
+    }
+}
+
+
+
+
+.login .contentLogin .loginButton {
+    background-color:rgb(230,45,41) ;
+    width: 4em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 100px;
+    transition: 0.4s;
+}
+
+.login .contentLogin .loginButton:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+}
+.login .contentLogin input::placeholder {
+    color: rgb(35, 19, 94);
+    font-family: 'Poppins', sans-serif;;
+}
+
+.login img {
+    width: 45em;
+    height: auto;
+
+    margin-right: 200px;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .login img {
+        width: 20em;
+    }
+}
+
+.login img:hover {
+    
+}
+
+.topgames {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: hsla(0, 0%, 0%, 1);
+
+    background: linear-gradient(315deg, hsla(0, 0%, 0%, 1) 0%, hsla(308, 95%, 23%, 1) 100%);
+    
+    background: -moz-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 0%, hsla(308, 95%, 23%, 1) 100%);
+    
+    background: -webkit-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 0%, hsla(308, 95%, 23%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#730364", GradientType=1 );
+
+
+}
+
+
+
+.topgames h4{
+   font-size: 3em;
+   position: absolute;
+   top: 10px;
+   color: white;
+   text-align: center;
+   padding: 0px 100px;
+}
+
+.topgames .contentGames .game {
+
+    width: 10em;
+    height: 15em;
+    background-color: rgba(45, 44, 102, 0.253);
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.219);
+    transition: 0.2s;
+}
+
+.topgames .contentGames .game:hover {
+    transform: scale(1.1);
+}
+
+.topgames .contentGames {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+@media(max-width: 768px) {
+    .topgames .contentGames{
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: repeat(5, 1fr);
+       top: 200px;
+    }
+} 
+
+.topgames .contentGames .game img {
+    width: 10em;
+    height: 12em;
+    border-radius: 5px;
+}
+
+.topgames .contentGames .game p {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+/*
+position: relative;
+width: 100%;
+min-height: 100vh;
+padding: 0px 100px;
+display: flex;
+justify-content: center; */
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: hsla(208, 100%, 63%, 1);
+
+background: linear-gradient(135deg, hsla(208, 100%, 63%, 1) 0%, hsla(234, 59%, 30%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(208, 100%, 63%, 1) 0%, hsla(234, 59%, 30%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(208, 100%, 63%, 1) 0%, hsla(234, 59%, 30%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40A6FF", endColorstr="#20297B", GradientType=1 );
+
+
+}
+
+.contact .contentContact {
+    color: white;
+    width: 50%;
+    margin: 20px;
+    
+
+}
+
+.contact .contentContact h5{
+    font-size: 3em;
+    padding: 0px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact .contentContact h5{
+        font-size: 1em;
+        left: 100px;
+        position: relative;
+    }
+}
+
+.contact .contentContact p {
+    font-size: 2em;
+
+}
+
+@media (max-width: 768px) {
+    .contact .contentContact p{
+        font-size: 1em;
+        left: 100px;
+        position: relative;
+    }
+}
+.contact  img {
+    width: 30em;
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    left: -5em;
+    transition: 0.5s;
+    
+   
+}
+
+@media (max-width: 768px) {
+    .contact img{
+        width: 15em;
+        top: -300px;
+    }
+}
+
+.contact img:hover {
+    transform: scale(1.2);
+
+
+    
+}
+
+.contact .contentContact input {
+    display: grid;
+    width: 30em;
+    height: 10em;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .contact .contentContact input{
+        width: 15em;
+        position: relative;
+        left: 100px;
+ 
+    }
+}
+
+.contact .contentContact .emailInput {
+    width: 15em;
+    height: 1.8em;
+}
+
+
+
+.contact .contentContact button {
+    background-color: rgb(78, 220, 255);
+    width: 10em;
+    height: 2.5em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .contact .contentContact button{
+        width: 6em;
+        position: relative;
+        left: 100px;
+ 
+    }
+}
+
+.contact .contentContact button:hover{
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+.contact .scrollUp{
+    width: 2em;
+    height: auto;
+    filter: invert();
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5vh;
+}
+
+@media (max-width: 768px) {
+    .contact .scrollUp {
+        width: 2em;
+        top: 70vh;
+ 
+    }
+}
+
+.contactGames .shadow img {
+    width: 28em;
+    height: auto;
+    transition: 0.4s;
+}
+
+@media(max-width: 768px) {
+    .contactGames .shadow img{
+        width: 18em;
+        height: auto;
+    }
+} 
+
+.contactGames {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    background: hsla(0, 75%, 35%, 1);
+
+    background: linear-gradient(45deg, hsla(0, 75%, 35%, 1) 0%, hsla(0, 100%, 58%, 1) 39%, hsla(55, 100%, 75%, 1) 68%, hsla(24, 100%, 83%, 1) 96%);
+    
+    background: -moz-linear-gradient(45deg, hsla(0, 75%, 35%, 1) 0%, hsla(0, 100%, 58%, 1) 39%, hsla(55, 100%, 75%, 1) 68%, hsla(24, 100%, 83%, 1) 96%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(0, 75%, 35%, 1) 0%, hsla(0, 100%, 58%, 1) 39%, hsla(55, 100%, 75%, 1) 68%, hsla(24, 100%, 83%, 1) 96%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9B1616", endColorstr="#FF2828", GradientType=1 );
+
+    
+}
+
+@media(max-width: 768px) {
+    .contactGames{
+        padding: 10px;
+    }
+} 
+
+.contactGames .contentContact {
+    color: white;
+    width: 50%;
+    margin: 20px;
+    
+
+}
+
+.contactGames .contentContact h5{
+    font-size: 3em;
+    padding: 0px;
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .contactGames .contentContact h5{
+        font-size: 2em;
+    }
+} 
+
+.contactGames .contentContact p {
+    font-size: 2em;
+
+}
+
+@media(max-width: 768px) {
+    .contactGames .contentContact p{
+        font-size: 1em;
+    }
+} 
+
+.contactGames img:hover {
+    transform: scale(1.2);
+
+
+    
+}
+
+.contactGames .contentContact input {
+    display: grid;
+    width: 30em;
+    height: 10em;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+@media(max-width: 768px) {
+    .contactGames .contentContact input{
+        width: 15em;
+        
+    }
+} 
+
+.contactGames .contentContact .emailInput {
+    width: 15em;
+    height: 1.8em;
+}
+
+@media(max-width: 768px) {
+    .contactGames .contentContact .emailInput{
+        width: 8em;
+    }
+} 
+
+.contactGames .contentContact button {
+    background-color: rgb(78, 220, 255);
+    width: 10em;
+    height: 2.5em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.contactGames .contentContact button:hover{
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+.contactGames .scrollUp{
+    width: 2em;
+    height: auto;
+    filter: invert();
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5vh;
+    transition: 0.4s;
+}
+
